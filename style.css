@@ -1,0 +1,123 @@
+@font-face {
+    font-family: rh;
+    src: url(./Rejouice-Headline.ttf);
+}
+
+@font-face {
+    font-family: nb;
+    src: url(./NBInternationalProBoo.ttf);
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.page1 {
+    width: 100%;
+    height: 100vh;
+    background-color: #dadada;
+    position: relative;
+}
+
+.page1 video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.page1 .page1_con {
+    width: 100%;
+    height: 100%;
+    /* background-color: #000; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.page1 .page1_con nav {
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vw 3vw;
+    color: #fff;
+}
+
+.page1_con nav h3,h4 {
+    font-size: 1.4vw;
+    font-family: nb;
+    line-height: normal;
+}
+
+.page1_con h1 {
+    color: #fff;
+    font-family: rh;
+    font-size: 26.7vw;
+    line-height: 27vw;
+    font-weight: 600;
+}
+
+.cursor {
+    height: 7.5vw;
+    width: 7.5vw;
+    background-color: #FF5F38;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50% , -50%);
+}
+
+.cursor h5 {
+    font-size: 1.2vw;
+}
+
+.page2 {
+    width: 100%;
+    height: 100vh;
+    background-color: #FAF8F3;
+}
+
+.page2 .elem1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    /* We are a digital brand accelerator. We design, develop, and scale market-defining brands by unlocking their hidden potential. Choose full cash compensation or offset up to 50% of our fees for equity in your company. Your vision, your decision. */
+    align-items: center;
+    padding: 6vw 4vw;
+    /* flex-direction: column; */
+}
+
+.elem1 h1,h2 {
+    color: #0E0E0E;
+    font-family: nb;
+    font-size: 2vw;
+}
+
+.elem2 {
+    width: 100%;
+    height: auto;
+}
+
+.elem2 h1 {
+    font-family: nb;
+    font-size: 4vw;
+    font-weight: 100;
+    padding: 3vw 9vw;
+}
