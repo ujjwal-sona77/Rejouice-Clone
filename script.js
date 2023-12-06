@@ -58,17 +58,38 @@ function CursorEffect() {
 
 CursorEffect();
 
-gsap.from(".elem1 h1 , .elem1 h2 , .elem2 h1", {
-    ScrollTrigger: {
-        trigger: ".page2",
-        scroller: "body",
-        start: "top 50%",
-        end: "top 58%",
-        markers: true,
-        scrub: 2
-    },
-    y: 120,
+gsap.from(".elem2 h1 span , .elem1 h2 , .elem1 h1" , {
+    scrollTrigger: {
+        trigger: ".page2" , 
+        scroller: ".main" , 
+        start: "top 47%",
+        end: "top 50%",
+        scrub: 2,
+    } ,
+    y: 120 ,
+    stagger: 0.3,
+    duration: 1.2 ,
+    opacity: 0
+})
+
+gsap.from(".page4 .elem h2" , {
+    scrollTrigger: {
+        trigger: ".page4" , 
+        scroller: ".main" , 
+        start: "top 47%",
+        end: "top 50%",
+        scrub: 2,
+    } ,
+    y: 120 ,
     stagger: 0.2,
-    duration: 1,
+    duration: 1 ,
+    opacity: 0
+})
+
+gsap.from(".page1_con h1 span" , {
+    y: 100,
+    stagger: 0.2 ,
+    opacity: 0 ,
+    pin: true
 })
 
